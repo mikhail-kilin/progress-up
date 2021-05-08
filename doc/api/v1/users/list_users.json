@@ -19,7 +19,7 @@
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTYyODE1MjgsInN1YiI6ODQxfQ.kRfB5lh6AbOjsiaVNGtewCC5rDCz2o_H2TEbzPRT-QA"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1NjQ5NzcsInN1YiI6MjI4MX0.kaetQVIyQeh5ipZC8vHLg2dOK-CFsTNhm_duWqo72F8"
       },
       "request_query_parameters": {
         "{}": null
@@ -27,12 +27,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 841,\n    \"email\": \"john.smith@example.com\",\n    \"full_name\": \"John Smith\"\n  },\n  {\n    \"id\": 842,\n    \"email\": \"michael.jordan@example.com\",\n    \"full_name\": \"Michael Jordan\"\n  },\n  {\n    \"id\": 843,\n    \"email\": \"brad.pitt@example.com\",\n    \"full_name\": \"Brad Pitt\"\n  },\n  {\n    \"id\": 844,\n    \"email\": \"steve.jobs@example.com\",\n    \"full_name\": \"Steve Jobs\"\n  }\n]",
+      "response_body": "[\n  {\n    \"id\": 2278,\n    \"email\": \"michael.jordan@example.com\",\n    \"full_name\": \"Michael Jordan\",\n    \"phone\": \"79999999999\",\n    \"description\": \"I am User\",\n    \"avatar_url\": null\n  },\n  {\n    \"id\": 2279,\n    \"email\": \"brad.pitt@example.com\",\n    \"full_name\": \"Brad Pitt\",\n    \"phone\": \"79999999999\",\n    \"description\": \"I am User\",\n    \"avatar_url\": null\n  },\n  {\n    \"id\": 2280,\n    \"email\": \"steve.jobs@example.com\",\n    \"full_name\": \"Steve Jobs\",\n    \"phone\": \"79999999999\",\n    \"description\": \"I am User\",\n    \"avatar_url\": null\n  },\n  {\n    \"id\": 2281,\n    \"email\": \"user87@example.com\",\n    \"full_name\": \"Daron Mitchell\",\n    \"phone\": \"79999999999\",\n    \"description\": \"I am User\",\n    \"avatar_url\": null\n  }\n]",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl -g \"http://localhost:5000/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTYyODE1MjgsInN1YiI6ODQxfQ.kRfB5lh6AbOjsiaVNGtewCC5rDCz2o_H2TEbzPRT-QA\""
+      "curl": "curl -g \"http://0.0.0.0/v1/users\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1NjQ5NzcsInN1YiI6MjI4MX0.kaetQVIyQeh5ipZC8vHLg2dOK-CFsTNhm_duWqo72F8\""
     }
   ]
 }

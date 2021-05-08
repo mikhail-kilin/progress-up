@@ -1,0 +1,38 @@
+{
+  "resource": "Subscriptions",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/v1/subscriptions",
+  "description": "List current user`s subscriptions",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/v1/subscriptions",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1NjQ5NzcsInN1YiI6MjI1M30.ft_9P4wtNrkIlZQR1DCbCLA3gjnFdpTMPdgz7VCwjq4"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 237,\n    \"entity_id\": 2254,\n    \"entity_type\": \"User\",\n    \"user_id\": 2253,\n    \"created_at\": \"2021-05-08T12:56:17.811Z\"\n  },\n  {\n    \"id\": 238,\n    \"entity_id\": 1253,\n    \"entity_type\": \"Article\",\n    \"user_id\": 2253,\n    \"created_at\": \"2021-05-08T12:56:17.817Z\"\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://0.0.0.0/v1/subscriptions\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1NjQ5NzcsInN1YiI6MjI1M30.ft_9P4wtNrkIlZQR1DCbCLA3gjnFdpTMPdgz7VCwjq4\""
+    }
+  ]
+}

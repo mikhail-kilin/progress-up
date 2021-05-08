@@ -20,6 +20,21 @@
       "scope": "user",
       "name": "password",
       "description": "password"
+    },
+    {
+      "scope": "user",
+      "name": "phone",
+      "description": "phone"
+    },
+    {
+      "scope": "user",
+      "name": "description",
+      "description": "description"
+    },
+    {
+      "scope": "user",
+      "name": "avatar",
+      "description": "avatar file"
     }
   ],
   "response_fields": [
@@ -29,23 +44,23 @@
     {
       "request_method": "PATCH",
       "request_path": "/v1/profile",
-      "request_body": "{\"user\":{\"full_name\":\"Updated Name\",\"email\":\"user_updated@example.com\",\"password\":\"new_password\"}}",
+      "request_body": "{\"user\":{\"full_name\":\"Updated Name\",\"email\":\"user_updated@example.com\",\"password\":\"new_password\",\"phone\":\"89999999999\",\"description\":\"description\"}}",
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTYyODE1MjgsInN1YiI6ODM1fQ.FoJR2ry8maw_DxXviAYrjaJF0i8Xh6iZmlsZklbo1Z0"
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1NjQ5NzcsInN1YiI6MjIyN30.NHQNebBfSOOafkQfwm0-eCf4yAC41LnCWCuvNCbgfL8"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 835,\n  \"email\": \"user_updated@example.com\",\n  \"full_name\": \"Updated Name\"\n}",
+      "response_body": "{\n  \"id\": 2227,\n  \"email\": \"user_updated@example.com\",\n  \"full_name\": \"Updated Name\",\n  \"phone\": \"89999999999\",\n  \"description\": \"description\",\n  \"avatar_url\": null\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://localhost:5000/v1/profile\" -d '{\"user\":{\"full_name\":\"Updated Name\",\"email\":\"user_updated@example.com\",\"password\":\"new_password\"}}' -X PATCH \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTYyODE1MjgsInN1YiI6ODM1fQ.FoJR2ry8maw_DxXviAYrjaJF0i8Xh6iZmlsZklbo1Z0\""
+      "curl": "curl \"http://0.0.0.0/v1/profile\" -d '{\"user\":{\"full_name\":\"Updated Name\",\"email\":\"user_updated@example.com\",\"password\":\"new_password\",\"phone\":\"89999999999\",\"description\":\"description\"}}' -X PATCH \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1NjQ5NzcsInN1YiI6MjIyN30.NHQNebBfSOOafkQfwm0-eCf4yAC41LnCWCuvNCbgfL8\""
     }
   ]
 }

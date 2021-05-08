@@ -1,0 +1,46 @@
+{
+  "resource": "Subscriptions",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/v1/subscriptions",
+  "description": "Create Subscription",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": false,
+      "name": "article_id",
+      "description": "article id"
+    },
+    {
+      "required": false,
+      "name": "user_id",
+      "description": "user id (if you creates subscription to user)"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/v1/subscriptions",
+      "request_body": "{\"article_id\":1258}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1NjQ5NzcsInN1YiI6MjI2OH0.D_OORYxFUkpjECtYfqF3esfq0Yrdv1V5EFCZANj-CxI"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 246,\n  \"entity_id\": 1258,\n  \"entity_type\": \"Article\",\n  \"user_id\": 2268,\n  \"created_at\": \"2021-05-08T12:56:17.904Z\"\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://0.0.0.0/v1/subscriptions\" -d '{\"article_id\":1258}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1NjQ5NzcsInN1YiI6MjI2OH0.D_OORYxFUkpjECtYfqF3esfq0Yrdv1V5EFCZANj-CxI\""
+    }
+  ]
+}

@@ -13,7 +13,7 @@ module V1
     private
 
     def user_params
-      params.require(:user).permit(:full_name, :email, :password)
+      params.require(:user).permit(:full_name, :email, :password, :phone, :description, :avatar)
     end
   end
 end

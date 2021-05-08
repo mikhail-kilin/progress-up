@@ -1,0 +1,38 @@
+{
+  "resource": "Articles",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/v1/articles",
+  "description": "List Articles",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/v1/articles",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1NjQ5NzYsInN1YiI6MjE0NX0.z5dcamHR5pr1dmL5cLQh-5AgkWxBfKWEmWPszm9lTKg"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 1184,\n    \"title\": \"Non ut quam ut.\",\n    \"content\": \"Totam neque dolorem. Maiores consectetur in. Placeat ut voluptas.\",\n    \"user_id\": 2143,\n    \"created_at\": \"2021-05-08T12:56:16.922Z\"\n  },\n  {\n    \"id\": 1185,\n    \"title\": \"Provident officiis expedita ex.\",\n    \"content\": \"Qui est quis. Temporibus ut eaque. Dicta nam maiores.\",\n    \"user_id\": 2144,\n    \"created_at\": \"2021-05-08T12:56:16.927Z\"\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://0.0.0.0/v1/articles\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1NjQ5NzYsInN1YiI6MjE0NX0.z5dcamHR5pr1dmL5cLQh-5AgkWxBfKWEmWPszm9lTKg\""
+    }
+  ]
+}

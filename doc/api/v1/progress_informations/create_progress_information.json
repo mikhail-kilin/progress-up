@@ -1,0 +1,54 @@
+{
+  "resource": "Progress Informations",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/v1/progress_informations",
+  "description": "Create Progress Information",
+  "explanation": null,
+  "parameters": [
+    {
+      "scope": "progress_information",
+      "required": true,
+      "name": "article_id",
+      "description": "article id"
+    },
+    {
+      "scope": "progress_information",
+      "required": true,
+      "name": "content",
+      "description": "content"
+    },
+    {
+      "scope": "progress_information",
+      "required": false,
+      "name": "amount",
+      "description": "amount"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/v1/progress_informations",
+      "request_body": "{\"progress_information\":{\"article_id\":1241,\"content\":\"Content\",\"amount\":15000}}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1NjQ5NzcsInN1YiI6MjIzN30.tU7mLu4yV2eI-4gzTi69nPOjlJakbIcYg-2khetMK-k"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 289,\n  \"content\": \"Content\",\n  \"created_at\": \"2021-05-08T12:56:17.664Z\",\n  \"article_id\": 1241,\n  \"amount\": 15000\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://0.0.0.0/v1/progress_informations\" -d '{\"progress_information\":{\"article_id\":1241,\"content\":\"Content\",\"amount\":15000}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1NjQ5NzcsInN1YiI6MjIzN30.tU7mLu4yV2eI-4gzTi69nPOjlJakbIcYg-2khetMK-k\""
+    }
+  ]
+}

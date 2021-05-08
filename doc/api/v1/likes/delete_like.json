@@ -1,0 +1,46 @@
+{
+  "resource": "Likes",
+  "resource_explanation": null,
+  "http_method": "DELETE",
+  "route": "/v1/likes/:id",
+  "description": "Delete Like",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "like id"
+    },
+    {
+      "required": true,
+      "name": "article_id",
+      "description": "article id"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "DELETE",
+      "request_path": "/v1/likes/238",
+      "request_body": "{\"article_id\":1232}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1NjQ5NzcsInN1YiI6MjIyM30.z2ndxqo7gUjj3Pwg75De6SPZFoPSpWaACSEjYOo8zIE"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 236,\n    \"user_id\": 2223,\n    \"created_at\": \"2021-05-08T12:56:17.493Z\",\n    \"article_id\": 1232\n  },\n  {\n    \"id\": 237,\n    \"user_id\": 2223,\n    \"created_at\": \"2021-05-08T12:56:17.494Z\",\n    \"article_id\": 1232\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://0.0.0.0/v1/likes/238\" -d '{\"article_id\":1232}' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1NjQ5NzcsInN1YiI6MjIyM30.z2ndxqo7gUjj3Pwg75De6SPZFoPSpWaACSEjYOo8zIE\""
+    }
+  ]
+}

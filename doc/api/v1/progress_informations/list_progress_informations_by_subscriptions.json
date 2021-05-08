@@ -1,0 +1,42 @@
+{
+  "resource": "Progress Informations",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/v1/subscribed_progress_informations",
+  "description": "List Progress Informations by Subscriptions",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "article_id",
+      "description": "article id"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/v1/subscribed_progress_informations",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1NjQ5NzcsInN1YiI6MjI0OH0.kd6zmALSytgGB9CcB9QohoV8h-iswJ5kn395H57ls4s"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 294,\n    \"content\": \"Molestiae quia in. Voluptatem illo tempora. Eum et ut.\",\n    \"created_at\": \"2021-05-08T12:56:17.748Z\",\n    \"article_id\": 1247,\n    \"amount\": 1000\n  },\n  {\n    \"id\": 295,\n    \"content\": \"Qui error voluptatem. Autem esse est. Maiores error eveniet.\",\n    \"created_at\": \"2021-05-08T12:56:17.750Z\",\n    \"article_id\": 1248,\n    \"amount\": 1000\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"http://0.0.0.0/v1/subscribed_progress_informations\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1NjQ5NzcsInN1YiI6MjI0OH0.kd6zmALSytgGB9CcB9QohoV8h-iswJ5kn395H57ls4s\""
+    }
+  ]
+}

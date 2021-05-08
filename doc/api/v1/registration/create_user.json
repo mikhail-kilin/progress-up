@@ -22,6 +22,21 @@
       "required": true,
       "name": "password",
       "description": "password"
+    },
+    {
+      "scope": "user",
+      "name": "phone",
+      "description": "phone"
+    },
+    {
+      "scope": "user",
+      "name": "description",
+      "description": "description"
+    },
+    {
+      "scope": "user",
+      "name": "avatar",
+      "description": "avatar file"
     }
   ],
   "response_fields": [
@@ -31,7 +46,7 @@
     {
       "request_method": "POST",
       "request_path": "/v1/registrations",
-      "request_body": "{\"user\":{\"full_name\":\"Example User\",\"email\":\"user@example.com\",\"password\":\"123456\"}}",
+      "request_body": "{\"user\":{\"full_name\":\"Example User\",\"email\":\"user@example.com\",\"password\":\"123456\",\"phone\":\"89999999999\",\"description\":\"description\"}}",
       "request_headers": {
         "Accept": "application/json",
         "Content-Type": "application/json"
@@ -41,12 +56,12 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 838,\n  \"email\": \"user@example.com\",\n  \"full_name\": \"Example User\"\n}",
+      "response_body": "{\n  \"id\": 2244,\n  \"email\": \"user@example.com\",\n  \"full_name\": \"Example User\",\n  \"phone\": \"89999999999\",\n  \"description\": \"description\",\n  \"avatar_url\": null\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://localhost:5000/v1/registrations\" -d '{\"user\":{\"full_name\":\"Example User\",\"email\":\"user@example.com\",\"password\":\"123456\"}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
+      "curl": "curl \"http://0.0.0.0/v1/registrations\" -d '{\"user\":{\"full_name\":\"Example User\",\"email\":\"user@example.com\",\"password\":\"123456\",\"phone\":\"89999999999\",\"description\":\"description\"}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\""
     }
   ]
 }

@@ -1,0 +1,53 @@
+{
+  "resource": "Articles",
+  "resource_explanation": null,
+  "http_method": "PATCH",
+  "route": "/v1/articles/:id",
+  "description": "Updates Article",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "id",
+      "description": "article id"
+    },
+    {
+      "scope": "article",
+      "required": true,
+      "name": "title",
+      "description": "title"
+    },
+    {
+      "scope": "article",
+      "required": true,
+      "name": "content",
+      "description": "content"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PATCH",
+      "request_path": "/v1/articles/1201",
+      "request_body": "{\"article\":{\"title\":\"Title\",\"content\":\"Content\"}}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1NjQ5NzcsInN1YiI6MjE2M30.xRY-KkRL5KPcxrTq4ljxaUKUYG_WAx8nGuLHnPbZvhI"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": 1201,\n  \"title\": \"Title\",\n  \"content\": \"Content\",\n  \"user_id\": 2163,\n  \"created_at\": \"2021-05-08T12:56:17.071Z\"\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://0.0.0.0/v1/articles/1201\" -d '{\"article\":{\"title\":\"Title\",\"content\":\"Content\"}}' -X PATCH \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1NjQ5NzcsInN1YiI6MjE2M30.xRY-KkRL5KPcxrTq4ljxaUKUYG_WAx8nGuLHnPbZvhI\""
+    }
+  ]
+}

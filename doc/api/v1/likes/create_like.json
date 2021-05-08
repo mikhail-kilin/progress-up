@@ -1,0 +1,42 @@
+{
+  "resource": "Likes",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/v1/likes",
+  "description": "Create Like",
+  "explanation": null,
+  "parameters": [
+    {
+      "scope": "like",
+      "required": true,
+      "name": "article_id",
+      "description": "article id"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/v1/likes",
+      "request_body": "{\"like\":{\"article_id\":1229}}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1NjQ5NzcsInN1YiI6MjIxOH0.Pez7PyfRRjBGlWnAgpyyaBSx1rJwXIFpjd2tBC1XkI0"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 234,\n  \"user_id\": 2218,\n  \"created_at\": \"2021-05-08T12:56:17.456Z\",\n  \"article_id\": 1229\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://0.0.0.0/v1/likes\" -d '{\"like\":{\"article_id\":1229}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Lang: en\" \\\n\t-H \"Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MjA1NjQ5NzcsInN1YiI6MjIxOH0.Pez7PyfRRjBGlWnAgpyyaBSx1rJwXIFpjd2tBC1XkI0\""
+    }
+  ]
+}

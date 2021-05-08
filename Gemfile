@@ -10,6 +10,7 @@ gem "rails", "5.2.2.1"
 gem "active_model_serializers"
 gem "bcrypt"
 gem "bootsnap", require: false
+gem "carrierwave"
 gem "decent_exposure"
 gem "health_check"
 gem "interactor"

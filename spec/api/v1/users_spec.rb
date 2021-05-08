@@ -13,22 +13,34 @@ resource "Users" do
         {
           "id" => user_1.id,
           "email" => "michael.jordan@example.com",
-          "full_name" => "Michael Jordan"
+          "full_name" => "Michael Jordan",
+          "avatar_url" => user_1.avatar_url,
+          "description" => user_1.description,
+          "phone" => user_1.phone
         },
         {
           "id" => user_2.id,
           "email" => "brad.pitt@example.com",
-          "full_name" => "Brad Pitt"
+          "full_name" => "Brad Pitt",
+          "avatar_url" => user_2.avatar_url,
+          "description" => user_2.description,
+          "phone" => user_2.phone
         },
         {
           "id" => user_3.id,
           "email" => "steve.jobs@example.com",
-          "full_name" => "Steve Jobs"
+          "full_name" => "Steve Jobs",
+          "avatar_url" => user_3.avatar_url,
+          "description" => user_3.description,
+          "phone" => user_3.phone
         },
         {
           "id" => current_user.id,
           "email" => current_user.email,
-          "full_name" => current_user.full_name
+          "full_name" => current_user.full_name,
+          "avatar_url" => current_user.avatar_url,
+          "description" => current_user.description,
+          "phone" => current_user.phone
         }
       ]
     end
@@ -51,7 +63,10 @@ resource "Users" do
       {
         "id" => user.id,
         "email" => "john.smith@example.com",
-        "full_name" => "John Smith"
+        "full_name" => "John Smith",
+        "avatar_url" => user.avatar_url,
+        "description" => user.description,
+        "phone" => user.phone
       }
     end
 

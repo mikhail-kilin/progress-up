@@ -1,6 +1,101 @@
 {
   "resources": [
     {
+      "name": "Articles",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "List Articles",
+          "link": "articles/list_articles.json",
+          "groups": "all",
+          "route": "/v1/articles",
+          "method": "get"
+        },
+        {
+          "description": "Get Article",
+          "link": "articles/get_article.json",
+          "groups": "all",
+          "route": "/v1/articles/:id",
+          "method": "get"
+        },
+        {
+          "description": "Create Article",
+          "link": "articles/create_article.json",
+          "groups": "all",
+          "route": "/v1/articles",
+          "method": "post"
+        },
+        {
+          "description": "Updates Article",
+          "link": "articles/updates_article.json",
+          "groups": "all",
+          "route": "/v1/articles/:id",
+          "method": "patch"
+        }
+      ]
+    },
+    {
+      "name": "Comments",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "List Comments of Article",
+          "link": "comments/list_comments_of_article.json",
+          "groups": "all",
+          "route": "/v1/comments",
+          "method": "get"
+        },
+        {
+          "description": "Get Comment",
+          "link": "comments/get_comment.json",
+          "groups": "all",
+          "route": "/v1/comments/:id",
+          "method": "get"
+        },
+        {
+          "description": "Create Comment",
+          "link": "comments/create_comment.json",
+          "groups": "all",
+          "route": "/v1/comments",
+          "method": "post"
+        },
+        {
+          "description": "Updates Comment",
+          "link": "comments/updates_comment.json",
+          "groups": "all",
+          "route": "/v1/comments/:id",
+          "method": "patch"
+        }
+      ]
+    },
+    {
+      "name": "Likes",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "List Likes of Article",
+          "link": "likes/list_likes_of_article.json",
+          "groups": "all",
+          "route": "/v1/likes",
+          "method": "get"
+        },
+        {
+          "description": "Create Like",
+          "link": "likes/create_like.json",
+          "groups": "all",
+          "route": "/v1/likes",
+          "method": "post"
+        },
+        {
+          "description": "Delete Like",
+          "link": "likes/delete_like.json",
+          "groups": "all",
+          "route": "/v1/likes/:id",
+          "method": "delete"
+        }
+      ]
+    },
+    {
       "name": "Profiles",
       "explanation": null,
       "examples": [
@@ -28,6 +123,47 @@
       ]
     },
     {
+      "name": "Progress Informations",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "List Progress Informations of Article",
+          "link": "progress_informations/list_progress_informations_of_article.json",
+          "groups": "all",
+          "route": "/v1/progress_informations",
+          "method": "get"
+        },
+        {
+          "description": "Get Progress Information",
+          "link": "progress_informations/get_progress_information.json",
+          "groups": "all",
+          "route": "/v1/progress_informations/:id",
+          "method": "get"
+        },
+        {
+          "description": "Create Progress Information",
+          "link": "progress_informations/create_progress_information.json",
+          "groups": "all",
+          "route": "/v1/progress_informations",
+          "method": "post"
+        },
+        {
+          "description": "Updates Progress Information",
+          "link": "progress_informations/updates_progress_information.json",
+          "groups": "all",
+          "route": "/v1/progress_informations/:id",
+          "method": "patch"
+        },
+        {
+          "description": "List Progress Informations by Subscriptions",
+          "link": "progress_informations/list_progress_informations_by_subscriptions.json",
+          "groups": "all",
+          "route": "/v1/subscribed_progress_informations",
+          "method": "get"
+        }
+      ]
+    },
+    {
       "name": "Registration",
       "explanation": null,
       "examples": [
@@ -37,6 +173,40 @@
           "groups": "all",
           "route": "/v1/registrations",
           "method": "post"
+        }
+      ]
+    },
+    {
+      "name": "Subscriptions",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "List current user`s subscriptions",
+          "link": "subscriptions/list_current_user`s_subscriptions.json",
+          "groups": "all",
+          "route": "/v1/subscriptions",
+          "method": "get"
+        },
+        {
+          "description": "Get Subscription",
+          "link": "subscriptions/get_subscription.json",
+          "groups": "all",
+          "route": "/v1/subscriptions/:id",
+          "method": "get"
+        },
+        {
+          "description": "Create Subscription",
+          "link": "subscriptions/create_subscription.json",
+          "groups": "all",
+          "route": "/v1/subscriptions",
+          "method": "post"
+        },
+        {
+          "description": "Delete Subscription",
+          "link": "subscriptions/delete_subscription.json",
+          "groups": "all",
+          "route": "/v1/subscriptions/:id",
+          "method": "delete"
         }
       ]
     },
