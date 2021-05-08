@@ -147,15 +147,16 @@ GEM
       nokogiri (~> 1)
       rake
     mini_mime (1.0.1)
-    mini_portile2 (2.4.0)
+    mini_portile2 (2.5.1)
     minitest (5.11.3)
     msgpack (1.2.4)
     multi_json (1.13.1)
     mustache (1.0.5)
     mustermann (1.0.3)
     nio4r (2.3.1)
-    nokogiri (1.10.4)
-      mini_portile2 (~> 2.4.0)
+    nokogiri (1.11.3)
+      mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
     parallel (1.12.1)
     parser (2.5.1.2)
       ast (~> 2.4.0)
@@ -168,6 +169,7 @@ GEM
       pry (>= 0.10.4)
     public_suffix (3.0.3)
     puma (3.12.0)
+    racc (1.5.2)
     rack (2.0.7)
     rack-cors (1.0.2)
     rack-protection (2.0.5)
@@ -339,7 +341,7 @@ DEPENDENCIES
   webmock
 
 RUBY VERSION
-   ruby 2.5.1p57
+   ruby 2.6.6p146
 
 BUNDLED WITH
    1.17.3

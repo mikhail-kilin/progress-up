@@ -1,6 +1,6 @@
 ######################
 # Stage: Builder
-FROM ruby:2.5.1-alpine as Builder
+FROM ruby:2.6.6-alpine as Builder
 
 RUN apk add --update --no-cache \
     build-base \
@@ -31,7 +31,7 @@ RUN rm -rf $FOLDERS_TO_REMOVE
 
 ###############################
 # Stage Final
-FROM ruby:2.5.1-alpine
+FROM ruby:2.6.6-alpine
 LABEL maintainer="timur.vafin@flatstack.com"
 
 # Add Alpine packages
