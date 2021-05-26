@@ -45,12 +45,6 @@ module RailsBaseApi
     # Set default From address for all Mailers
     config.action_mailer.default_options = { from: ENV.fetch("MAILER_SENDER_ADDRESS") }
 
-    config.action_dispatch.default_headers = {
-        'Access-Control-Allow-Origin' => '*',
-        'Access-Control-Request-Method' => 'GET, PATCH, PUT, POST, OPTIONS, DELETE',
-        'Access-Control-Allow-Headers:' => 'Origin, X-Requested-With, Content-Type, Accept'
-    }
-
     # Set URL options to be able to use url_for helpers
     config.action_mailer.default_url_options = { host: ENV.fetch("HOST") }
   end
