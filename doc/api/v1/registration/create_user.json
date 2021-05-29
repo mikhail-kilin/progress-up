@@ -56,7 +56,7 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 2244,\n  \"email\": \"user@example.com\",\n  \"full_name\": \"Example User\",\n  \"phone\": \"89999999999\",\n  \"description\": \"description\",\n  \"article_ids\": \"[]\",\n  \"avatar_url\": null\n}",
+      "response_body": "{\n  \"id\": 2244,\n  \"email\": \"user@example.com\",\n  \"full_name\": \"Example User\",\n  \"phone\": \"89999999999\",\n  \"description\": \"description\",\n  \"article_ids\": [],\n  \"avatar_url\": null\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
