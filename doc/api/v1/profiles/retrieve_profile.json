@@ -27,7 +27,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 2226,\n  \"email\": \"john.smith@example.com\",\n  \"full_name\": \"John Smith\",\n  \"phone\": \"79999999999\",\n  \"description\": \"I am User\",\n  \"avatar_url\": null\n}",
+      "response_body": "{\n  \"id\": 2226,\n  \"email\": \"john.smith@example.com\",\n  \"full_name\": \"John Smith\",\n  \"phone\": \"79999999999\",\n  \"description\": \"I am User\",\n  \"article_ids\": \"[1, 2]\",\n  \"avatar_url\": null\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
